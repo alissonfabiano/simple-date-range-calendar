@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
+    "outDir": "../../docs",
     "target": "es5",
-    "lib": ["dom", "esnext"],
-    "jsx": "react",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "commonjs",
+    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "declaration": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "src/**/*.test.ts"]
 }
