@@ -8,13 +8,8 @@
   "description": "Monorepo for simple-date-range-calendar and related packages",
   "author": "Alisson Fabiano",
   "license": "MIT",
-  "scripts": {
-    "build": "lerna run build"
-  },
   "devDependencies": {
     "@types/jest": "^29.5.12",
-    "lerna": "^8.1.6",
     "react-scripts": "^5.0.1"
-  },
-  "dependencies": {}
+  }
 }

@@ -80,10 +80,15 @@ const Home = () => {
         }}
       >
         <Container maxWidth="sm" sx={{ textAlign: "center", mt: 4 }}>
-          <Typography variant="h3" component="h1" gutterBottom color={'chocolate'}>
+          <Typography
+            variant="h3"
+            component="h1"
+            gutterBottom
+            color={"chocolate"}
+          >
             Simple Date Range Calendar Demo
           </Typography>
-          <Typography variant="body1" gutterBottom color={'Highlight'}>
+          <Typography variant="body1" gutterBottom color={"Highlight"}>
             Here is a demo of the Simple Date Range Calendar component:
           </Typography>
 
