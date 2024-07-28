@@ -1,20 +1,27 @@
 {
   "name": "simple-date-range-calendar",
-  "version": "0.1.2",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "description": "A simple date range calendar component for React",
   "author": "Alisson Fabiano",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "yarn publish --access public"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.1",
+    "@mui/styles": "^5.16.4",
     "date-fns": "^3.6.0",
+    "framer-motion": "^11.3.19",
     "typescript": "^5.5.3",
     "web-vitals": "^2.1.4"
   },

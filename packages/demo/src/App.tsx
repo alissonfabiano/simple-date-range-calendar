@@ -6,7 +6,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-  },
+  }
 ]);
 
 const App: React.FC = () => {

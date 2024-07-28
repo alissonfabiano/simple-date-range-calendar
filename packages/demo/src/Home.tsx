@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { Calendar } from "simple-date-range-calendar";
 import {
-  ThemeProvider,
   Container,
   Typography,
   Switch,
   Box,
   styled,
+  IconButton,
 } from "@mui/material";
-import { darkTheme, lightTheme } from "./themes";
+import { addMonths, startOfMonth, subMonths } from "date-fns";
+import { Calendar } from "simple-date-range-calendar";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -64,47 +65,69 @@ const Home = () => {
     setDarkMode(!darkMode);
   };
 
+  const [currentMonth, setCurrentMonth] = useState<Date>(
+    startOfMonth(new Date())
+  );
+
+  const handleMonthChange = (direction: "prev" | "next") => {
+    setCurrentMonth((prevMonth) =>
+      direction === "prev" ? subMonths(prevMonth, 1) : addMonths(prevMonth, 1)
+    );
+  };
+
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: darkMode ? "black" : "white",
+      }}
+    >
       <Box
         sx={{
-          minHeight: "100vh",
+          position: "absolute",
+          top: 16,
+          right: 16,
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
           alignItems: "center",
-          backgroundImage: darkMode
-            ? 'url("https://i.pinimg.com/originals/fb/30/20/fb3020684d92697652e608b4b62753ef.jpg")'
-            : 'url("https://media.istockphoto.com/id/1128410927/photo/blue-sky-background-and-white-clouds-soft-focus-and-copy-space.jpg?s=612x612&w=0&k=20&c=oOIBh0_Fsv2LhVHP9ZoCRMOPLCjXcuK3k9W5Srj0Eyc=")',
-          backgroundSize: "cover",
         }}
       >
-        <Container maxWidth="sm" sx={{ textAlign: "center", mt: 4 }}>
-          <Typography
-            variant="h3"
-            component="h1"
-            gutterBottom
-            color={"chocolate"}
-          >
-            Simple Date Range Calendar Demo
-          </Typography>
-          <Typography variant="body1" gutterBottom color={"Highlight"}>
-            Here is a demo of the Simple Date Range Calendar component:
-          </Typography>
-
-          <MaterialUISwitch
-            checked={darkMode}
-            onChange={handleThemeChange}
-            sx={{ m: 1 }}
-            defaultChecked
-          />
-
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Calendar />
-          </Box>
-        </Container>
+        <MaterialUISwitch
+          checked={darkMode}
+          onChange={handleThemeChange}
+          sx={{ m: 1 }}
+        />
+        <IconButton
+          aria-label="github"
+          color={"info"}
+          size="large"
+          target="_blank"
+          href="https://github.com/alissonfabiano/simple-date-range-calendar"
+        >
+          <GitHubIcon fontSize="large" />
+        </IconButton>
       </Box>
-    </ThemeProvider>
+      <Container maxWidth="sm" sx={{ textAlign: "center", mt: 4 }}>
+        <Typography
+          variant="h3"
+          component="h1"
+          gutterBottom
+          color={"chocolate"}
+        >
+          Simple Date Range Calendar Demo
+        </Typography>
+        <Box sx={{ display: "flex", justifyContent: "center", mt: 6, mb: 4 }}>
+          <Calendar
+            theme={darkMode ? "dark" : "light"}
+            currentMonth={currentMonth}
+            onMonthChange={handleMonthChange}
+          />
+        </Box>
+      </Container>
+    </Box>
   );
 };
 
