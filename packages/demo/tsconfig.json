@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
     "target": "es5",
-    "lib": ["dom", "esnext"],
-    "jsx": "react",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "commonjs",
+    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "declaration": true,
+    "lib": ["es2015", "dom"],
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "types": ["node", "@types/react", "@types/react-dom"]
   },
-  "include": ["src", "../simple-date-range-calendar/src/themes"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "src/**/*.test.ts"]
 }
