@@ -8762,10 +8762,10 @@ signal-exit@^4.0.1:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
-simple-date-range-calendar@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/simple-date-range-calendar/-/simple-date-range-calendar-1.0.2.tgz#872908131eb799f8542a3e0231fa20a9a0b4d278"
-  integrity sha512-GMl50JMOUk23ksS2Lf0Yw+i1zBjHUjJT/DgjZcOTo4GnZktyxuHrEWfZDiYzwOn0m7pPFQMeYkzHMP1nQgY+ag==
+simple-date-range-calendar@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/simple-date-range-calendar/-/simple-date-range-calendar-1.0.3.tgz#68d90393a1f727f25969f1c1f508594c45c31858"
+  integrity sha512-2j2hbj0v+wH1ssa71qNzPyhNXqeY62ksAdC/v+1xtNB6X/26DrXEKdPTwUanPXQXnT7JOjz8HKgnolrogNnHXQ==
   dependencies:
     "@emotion/react" "^11.13.0"
     "@emotion/styled" "^11.13.0"
