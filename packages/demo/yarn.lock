@@ -1744,7 +1744,7 @@
   dependencies:
     "@babel/runtime" "^7.23.9"
 
-"@mui/material@^5.16.1", "@mui/material@^5.16.5":
+"@mui/material@^5.16.5":
   version "5.16.5"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.16.5.tgz#7989b088073f88c2d19501cc947899d811556089"
   integrity sha512-eQrjjg4JeczXvh/+8yvJkxWIiKNHVptB/AqpsKfZBWp5mUD5U3VsjODMuUl1K2BSq0omV3CiO/mQmWSSMKSmaA==
@@ -8762,16 +8762,17 @@ signal-exit@^4.0.1:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
-simple-date-range-calendar@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/simple-date-range-calendar/-/simple-date-range-calendar-1.0.1.tgz#4ec0e63cec214ba8e00bbb7030ef16c3ed927c45"
-  integrity sha512-ieF6R8qfMEx9FvG1e8EaKSEm5mcLu+Z+BnCZLn4Yup8jpS0ehqOftAKpCCMC+V57i/gknYVNFvJGqFBJ6c0S8w==
+simple-date-range-calendar@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/simple-date-range-calendar/-/simple-date-range-calendar-1.0.2.tgz#872908131eb799f8542a3e0231fa20a9a0b4d278"
+  integrity sha512-GMl50JMOUk23ksS2Lf0Yw+i1zBjHUjJT/DgjZcOTo4GnZktyxuHrEWfZDiYzwOn0m7pPFQMeYkzHMP1nQgY+ag==
   dependencies:
     "@emotion/react" "^11.13.0"
     "@emotion/styled" "^11.13.0"
     "@mui/icons-material" "^5.16.4"
-    "@mui/material" "^5.16.1"
+    "@mui/material" "^5.16.5"
     "@mui/styles" "^5.16.4"
+    "@mui/system" "^5.16.5"
     date-fns "^3.6.0"
     framer-motion "^11.3.19"
     typescript "^5.5.3"

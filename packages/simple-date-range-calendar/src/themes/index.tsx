@@ -1,6 +1,6 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material";
 
-declare module '@mui/material/styles' {
+declare module '@mui/material' {
   interface Palette {
     border: {
       default: string;
