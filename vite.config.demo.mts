@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
 
 export default defineConfig({
   base: '/simple-date-range-calendar/',
@@ -8,7 +9,7 @@ export default defineConfig({
     outDir: 'demo-dist',
     rollupOptions: {
       input: {
-        main: 'src/main.tsx',
+        main: resolve(__dirname, 'index.html'),
       },
     },
   },
