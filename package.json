@@ -1,0 +1,60 @@
+{
+  "name": "simple-date-range-calendar",
+  "version": "2.0.0",
+  "description": "A React date range calendar component",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:demo": "vite build --config vite.config.demo.ts",
+    "preview": "vite preview",
+    "test": "jest",
+    "prepare": "npm run build",
+    "predeploy": "npm run build:demo",
+    "deploy": "gh-pages -d dist",
+    "prettier:check": "prettier --check './src/**/*.{ts,tsx,js,jsx,json,md}'",
+    "prettier:write": "prettier --write './src/**/*.{ts,tsx,js,jsx,json,md}'",
+    "publish:npm": "npm publish --access public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
+    "date-fns": "^4.1.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.13",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "gh-pages": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "keywords": [
+    "react",
+    "calendar",
+    "date-picker",
+    "react-component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alissonfabiano/simple-date-range-calendar.git"
+  },
+  "author": "Alisson Fabiano",
+  "license": "MIT"
+}
