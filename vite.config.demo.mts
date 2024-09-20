@@ -5,12 +5,11 @@ export default defineConfig({
   base: '/simple-date-range-calendar/',
   plugins: [react()],
   build: {
-    outDir: 'dist',
+    outDir: 'demo-dist',
     rollupOptions: {
       input: {
-        main: 'src/main.tsx', 
+        main: 'src/main.tsx',
       },
     },
   },
-  publicDir: false, 
 });
