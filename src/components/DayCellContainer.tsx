@@ -50,7 +50,7 @@ const DayCellContainer = styled('div', {
         borderTopLeftRadius: '50%',
         borderBottomLeftRadius: '50%',
         borderLeftColor:
-          isInPreviewingRange && !isInRange ? theme.palette.border.previewing : 'transparent',
+          isInPreviewingRange && !isInRange ? theme.palette.info.main : 'transparent',
       },
     },
     ':last-of-type': {
@@ -60,7 +60,7 @@ const DayCellContainer = styled('div', {
         borderTopRightRadius: '50%',
         borderBottomRightRadius: '50%',
         borderRightColor:
-          isInPreviewingRange && !isInRange ? theme.palette.border.previewing : 'transparent',
+          isInPreviewingRange && !isInRange ? theme.palette.info.main : 'transparent',
       },
     },
     '&:hover': {
@@ -71,8 +71,8 @@ const DayCellContainer = styled('div', {
               isRangeStart || isRangeEnd
                 ? 'transparent'
                 : direction === 'right'
-                  ? `${theme.palette.border.previewing} ${theme.palette.border.previewing} ${theme.palette.border.previewing} transparent`
-                  : `${theme.palette.border.previewing} transparent ${theme.palette.border.previewing} ${theme.palette.border.previewing}`,
+                  ? `${theme.palette.info.main} ${theme.palette.info.main} ${theme.palette.info.main} transparent`
+                  : `${theme.palette.info.main} transparent ${theme.palette.info.main} ${theme.palette.info.main}`,
             borderRadius: direction === 'right' ? '0px 50% 50% 0px' : '50% 0px 0px 50%',
           }),
         ...(isInRange &&
@@ -92,7 +92,7 @@ const DayCellContainer = styled('div', {
             !isRangeStart &&
             !isRangeEnd && {
               backgroundColor: theme.palette.action.selected,
-              border: `1px solid ${theme.palette.border.today}`,
+              border: `1px solid ${theme.palette.info.dark}`,
             }),
         },
       },
@@ -103,7 +103,7 @@ const DayCellContainer = styled('div', {
           borderTopLeftRadius: '50%',
           borderBottomLeftRadius: '50%',
           borderLeftColor:
-            isInPreviewingRange && !isInRange ? theme.palette.border.previewing : 'transparent',
+            isInPreviewingRange && !isInRange ? theme.palette.info.main : 'transparent',
         },
       },
       ':last-of-type': {
@@ -113,7 +113,7 @@ const DayCellContainer = styled('div', {
           borderTopRightRadius: '50%',
           borderBottomRightRadius: '50%',
           borderRightColor:
-            isInPreviewingRange && !isInRange ? theme.palette.border.previewing : 'transparent',
+            isInPreviewingRange && !isInRange ? theme.palette.info.main : 'transparent',
         },
       },
     },

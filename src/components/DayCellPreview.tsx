@@ -30,15 +30,15 @@ const DayCellPreview = styled('div', {
 }) => {
   const baseBorderStyle = '2px solid transparent';
   const previewingBorderStyle = '2px dashed transparent';
-  const borderColorToday = `${theme.palette.border.previewing} transparent ${theme.palette.border.previewing} transparent`;
-  const borderColorDefault = `${theme.palette.border.previewing} transparent`;
+  const borderColorToday = `${theme.palette.info.main} transparent ${theme.palette.info.main} transparent`;
+  const borderColorDefault = `${theme.palette.info.main} transparent`;
 
   const rangeStartBorderColor =
     direction === 'left'
-      ? `${theme.palette.border.previewing} ${theme.palette.border.previewing} ${theme.palette.border.previewing} transparent`
-      : `${theme.palette.border.previewing} transparent ${theme.palette.border.previewing} ${theme.palette.border.previewing}`;
+      ? `${theme.palette.info.main} ${theme.palette.info.main} ${theme.palette.info.main} transparent`
+      : `${theme.palette.info.main} transparent ${theme.palette.info.main} ${theme.palette.info.main}`;
 
-  const rangeEndBorderColor = `${theme.palette.border.previewing} ${theme.palette.border.previewing} ${theme.palette.border.previewing} transparent`;
+  const rangeEndBorderColor = `${theme.palette.info.main} ${theme.palette.info.main} ${theme.palette.info.main} transparent`;
 
   return {
     border: isInPreviewingRange ? previewingBorderStyle : baseBorderStyle,

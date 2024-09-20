@@ -25,13 +25,9 @@ export const royalBlueTheme = createTheme({
       disabled: 'rgba(65, 105, 225, 0.3)',
       focus: 'rgba(65, 105, 225, 0.5)',
     },
-    border: {
-      default: 'rgba(65, 105, 225, 0.2)',
-      previewing: 'rgba(65, 105, 225, 0.3)',
-      today: 'rgba(65, 105, 225, 0.7)',
-    },
-    previewing: {
-      border: 'rgba(65, 105, 225, 0.3)',
+    info: {
+      main: 'rgba(65, 105, 225, 0.3)',
+      dark: 'rgba(65, 105, 225, 0.7)',
     },
     divider: 'rgba(65, 105, 225, 0.2)',
   },
@@ -62,13 +58,9 @@ export const pinkTheme = createTheme({
       disabled: 'rgba(233, 30, 99, 0.3)',
       focus: 'rgba(233, 30, 99, 0.5)',
     },
-    border: {
-      default: 'rgba(233, 30, 99, 0.2)',
-      previewing: 'rgba(233, 30, 99, 0.3)',
-      today: 'rgba(233, 30, 99, 0.7)',
-    },
-    previewing: {
-      border: 'rgba(233, 30, 99, 0.3)',
+    info: {
+      main: 'rgba(233, 30, 99, 0.3)',
+      dark: 'rgba(233, 30, 99, 0.7)',
     },
     divider: 'rgba(233, 30, 99, 0.2)',
   },
@@ -99,13 +91,9 @@ export const greenTheme = createTheme({
       disabled: 'rgba(56, 142, 60, 0.3)',
       focus: 'rgba(56, 142, 60, 0.5)',
     },
-    border: {
-      default: 'rgba(56, 142, 60, 0.2)',
-      previewing: 'rgba(56, 142, 60, 0.3)',
-      today: 'rgba(56, 142, 60, 0.7)',
-    },
-    previewing: {
-      border: 'rgba(56, 142, 60, 0.3)',
+    info: {
+      main: 'rgba(56, 142, 60, 0.3)',
+      dark: 'rgba(56, 142, 60, 0.7)',
     },
     divider: 'rgba(56, 142, 60, 0.2)',
   },
@@ -131,14 +119,11 @@ export const lightTheme = createTheme({
       hover: 'rgba(0, 0, 0, 0.04)',
       selected: 'rgba(25, 118, 210, 0.12)',
     },
-    border: {
-      default: 'rgba(0, 0, 0, 0.12)',
-      previewing: 'rgba(0, 0, 0, 0.12)',
-      today: 'rgba(0, 0, 0, 0.6)',
+    info: {
+      main: 'rgba(0, 0, 0, 0.12)',
+      dark: 'rgba(0, 0, 0, 0.6)',
     },
-    previewing: {
-      border: 'rgba(0, 0, 0, 0.12)',
-    },
+    divider: 'rgba(0, 0, 0, 0.12)',
   },
 });
 
@@ -162,13 +147,10 @@ export const darkTheme = createTheme({
       hover: 'rgba(255, 255, 255, 0.08)',
       selected: 'rgba(144, 202, 249, 0.12)',
     },
-    border: {
-      default: 'rgba(255, 255, 255, 0.12)',
-      previewing: 'rgba(255, 255, 255, 0.12)',
-      today: 'rgba(255, 255, 255, 0.6)',
+    info: {
+      main: 'rgba(255, 255, 255, 0.12)',
+      dark: 'rgba(255, 255, 255, 0.6)',
     },
-    previewing: {
-      border: 'rgba(255, 255, 255, 0.12)',
-    },
+    divider: 'rgba(255, 255, 255, 0.12)',
   },
 });

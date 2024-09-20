@@ -18,7 +18,7 @@ const DayCellButton = styled(ButtonBase, {
     ].includes(prop),
 })<DayCellButtonProps>(({ theme, isToday, isRangeStart, isRangeEnd }) => ({
   ...theme.typography.button,
-  border: isToday ? `1px solid ${theme.palette.border.today}` : 'none',
+  border: isToday ? `1px solid ${theme.palette.info.dark}` : 'none',
   background: 'none',
   borderRadius: '50%',
   width: 36,
