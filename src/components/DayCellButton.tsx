@@ -1,4 +1,5 @@
-import { ButtonBase, styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { ButtonBase } from '@mui/material';
 
 interface DayCellButtonProps {
   isToday: boolean;

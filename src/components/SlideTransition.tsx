@@ -12,6 +12,7 @@ const Main = styled('div')({
 interface SlideTransitionProps {
   direction: 'left' | 'right';
   children: ReactElement;
+  width?: number | string;
 }
 
 const SlideTransition: React.FC<SlideTransitionProps> = ({ children, direction }) => {

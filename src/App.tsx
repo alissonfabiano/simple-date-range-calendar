@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Container, Typography, Box, styled, ThemeProvider, Theme } from '@mui/material';
+import { styled, Theme, ThemeProvider } from '@mui/material/styles';
+import { Container, Typography, Box } from '@mui/material';
 import { Calendar } from './components';
 import { darkTheme, greenTheme, lightTheme, pinkTheme, royalBlueTheme } from './themes';
 import { addDays } from 'date-fns';

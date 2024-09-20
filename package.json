@@ -1,6 +1,6 @@
 {
   "name": "simple-date-range-calendar",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A React date range calendar component",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -23,15 +23,13 @@
     "README.md"
   ],
   "dependencies": {
+    "date-fns": "^4.1.0"
+  },
+  "devDependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
-    "date-fns": "^4.1.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "devDependencies": {
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.13",
     "@types/react-dom": "^18.3.0",
@@ -45,7 +43,10 @@
   },
   "peerDependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "@mui/material": "^5.16.7",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0"
   },
   "keywords": [
     "react",

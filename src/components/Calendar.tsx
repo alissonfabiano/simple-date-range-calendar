@@ -35,9 +35,14 @@ interface CalendarProps {
   endDate?: Date | null;
   onDateRangeChange?: (startDate: Date | null, endDate: Date | null) => void;
   onDateRangeIsSelected?: (startDate: Date, endDate: Date) => void;
+  styles?: {
+    borderRadius?: number;
+    width?: number | string;
+  };
 }
 
 const Calendar = ({
+  styles,
   startDate,
   endDate,
   onDateRangeChange,
@@ -167,7 +172,7 @@ const Calendar = ({
   };
 
   return (
-    <CalendarContainer>
+    <CalendarContainer {...styles}>
       <CalendarHeader>
         <HeaderLabel>{monthLabel}</HeaderLabel>
         <ArrowSwitcher>
@@ -186,7 +191,7 @@ const Calendar = ({
           </DayCellHeader>
         ))}
       </WeekDaysRow>
-      <SlideTransition direction={directionAnim} key={currentMonth.toString()}>
+      <SlideTransition width={styles?.width} direction={directionAnim} key={currentMonth.toString()}>
         <CalendarRowsContent>
           {weeks.map((week, weekIndex) => (
             <WeekRow key={weekIndex}>

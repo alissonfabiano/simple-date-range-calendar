@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Theme } from '@mui/material';
+import { Theme } from '@mui/material/styles';
 import deepmerge from '@mui/utils/deepmerge';
 import { darkTheme, lightTheme } from '../themes';
 

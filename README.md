@@ -1,6 +1,6 @@
 # React Date Range Calendar
 
-**React Date Range Calendar** is a flexible and customizable date range calendar component for React applications. This library allows you to easily select date ranges with an intuitive interface, offering several themes out-of-the-box with full support for creating your own themes.
+**React Date Range Calendar** is a flexible and customizable date range calendar component for React applications. This library allows you to easily select date ranges with an intuitive interface, offering several themes out-of-the-box with full support for creating your own themes. You can also customize the appearance directly via props such as `borderRadius` and `width`.
 
 ## Installation
 
@@ -61,6 +61,30 @@ The `Calendar` component accepts the following props:
 | `endDate`               | `Date \| null`                                             | Optional. The ending date of the selected range. Defaults to `null`.   |
 | `onDateRangeChange`     | `(startDate: Date \| null, endDate: Date \| null) => void` | Optional. Callback triggered whenever the date range changes.          |
 | `onDateRangeIsSelected` | `(startDate: Date, endDate: Date) => void`                 | Optional. Callback triggered when the date range is fully selected.    |
+| `styles`                | `object`                                                   | Optional. Custom styles like `borderRadius` and `width`.               |
+| `styles.borderRadius`   | `number`                                                   | Optional. Border radius of the calendar. Defaults to `25`.             |
+| `styles.width`          | `number \| string`                                         | Optional. Width of the calendar. Defaults to `280px`.                  |
+
+### Example of Custom `borderRadius` and `width`
+
+You can customize the appearance by passing a `styles` prop to modify the `borderRadius` and `width` of the calendar:
+
+```tsx
+import React from 'react';
+import { Calendar } from 'simple-date-range-calendar';
+
+const App = () => {
+  return (
+    <Calendar
+      startDate={new Date()}
+      endDate={new Date()}
+      styles={{ borderRadius: 15, width: 350 }}
+    />
+  );
+};
+
+export default App;
+```
 
 ## Themes
 
@@ -126,7 +150,7 @@ Here is a full example that includes multiple themes and allows you to switch be
 ```tsx
 import { useState } from 'react';
 import { Container, Typography, Box, ThemeProvider } from '@mui/material';
-import { 
+import {
   Calendar,
   darkTheme,
   greenTheme,
