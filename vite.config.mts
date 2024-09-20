@@ -1,14 +1,24 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+      rollupTypes: true,
+      outDir: 'dist/types',
+      tsconfigPath: './tsconfig.app.json',
+      include: ['src'],
+    }),
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'SimpleDateRangeCalendar',
-      fileName: (format) => `simple-date-range-calendar.${format}.js`,
+      name: 'ReactDateRangeCalendar',
+      fileName: 'index',
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -20,4 +30,5 @@ export default defineConfig({
       },
     },
   },
+  publicDir: false,
 });
