@@ -21,11 +21,14 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', '@mui/material', '@emotion/react', '@emotion/styled'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          '@mui/material': 'MaterialUI',
+          '@emotion/react': 'EmotionReact',
+          '@emotion/styled': 'EmotionStyled',
         },
       },
     },
