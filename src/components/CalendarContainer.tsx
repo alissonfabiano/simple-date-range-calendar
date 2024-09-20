@@ -13,7 +13,7 @@ const CalendarContainer = styled('div')<CalendarContainerProps>(
     width: typeof width === 'number' ? `${width}px` : width,
     borderRadius: `${borderRadius}px`,
     backgroundColor: theme.palette.background.paper,
-  })
+  }),
 );
 
 export default CalendarContainer;

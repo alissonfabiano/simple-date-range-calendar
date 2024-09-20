@@ -191,7 +191,11 @@ const Calendar = ({
           </DayCellHeader>
         ))}
       </WeekDaysRow>
-      <SlideTransition width={styles?.width} direction={directionAnim} key={currentMonth.toString()}>
+      <SlideTransition
+        width={styles?.width}
+        direction={directionAnim}
+        key={currentMonth.toString()}
+      >
         <CalendarRowsContent>
           {weeks.map((week, weekIndex) => (
             <WeekRow key={weekIndex}>
